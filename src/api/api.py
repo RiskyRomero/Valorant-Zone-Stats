@@ -35,6 +35,7 @@ class ValorantConstants:
         'Pitt': 'Pearl', #This is how Pearl, Sunset, and Lotus are referred to within the game files
         'Juliett': 'Sunset',
         'Jam': 'Lotus',
+        'Abyss': 'Infinity',
         'Range': 'Range'
     }
 
