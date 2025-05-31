@@ -96,6 +96,8 @@ Once you've installed all the dependencies, you can execute `run.bat` to check i
 To package the program run either `build.bat` (for a folder) or `build_onefile.bat` (for a single exe). Don't forget to
 activate the virtualenv first!
 
+Note: When building, an error may occur, install/update pyinstaller to the latest version with `pip install pyinstaller` and re-attempt to build.
+
 ## Credits
 - [Leetify](https://leetify.com) for the inspiration
 - Images
