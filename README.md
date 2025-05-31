@@ -13,9 +13,14 @@ A simple desktop program to view your VALORANT performance in different areas ac
 ![map page](resources/images/map.png)
 
 ## Quick Links
+- [Quick Links](#quick-links)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Building](#building)
+  - [Icon Legend](#icon-legend)
+- [Building (Windows)](#building-windows)
+    - [Create a virtualenv](#create-a-virtualenv)
+    - [Activate the virtualenv](#activate-the-virtualenv)
+    - [Install the dependencies](#install-the-dependencies)
 - [Credits](#credits)
 - [TODO](#todo)
 - [How?](#how)
@@ -68,11 +73,25 @@ scrollwheel and pan by dragging on the map.
 **Note** that you will need to fetch matches again when you open the program again in the future. It should be a bit faster
 since all your older matches are already stored on your computer.
 
-## Building
-Python 3.8.8 was used to develop this program.
+## Building (Windows)
+Python 3.10.6 was used to develop this program. (Updated as of 31st May 2025 - Ryumin).
 
-Create a virtualenv with the dependencies (listed in `requirements.txt`), start a terminal in the root directory of the
-project, activate the virtualenv, then execute `run.bat`.
+#### Create a virtualenv
+Create a virtual environment within the directory with:
+`python -m venv {venv-name} {venv location}`
+```bash
+python -m venv myvenv .
+```
+
+#### Activate the virtualenv
+Activate the virtual environment with the `activate` file that should be located in your directory, example:
+`Valorant-Zone-Stats/myvenv/Scripts/activate`
+
+#### Install the dependencies
+Ensure you've activated your virtual environment before installing the dependencies.
+Install the dependencies with: `pip install -r requirements`
+
+Once you've installed all the dependencies, you can execute `run.bat` to check if the program works.
 
 To package the program run either `build.bat` (for a folder) or `build_onefile.bat` (for a single exe). Don't forget to
 activate the virtualenv first!
